@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gAs-qt-wJH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shop Types Tables-->
+        <scene sceneID="fhc-9P-ahD">
+            <objects>
+                <tableViewController id="6rO-xy-YuP" customClass="TypesTableViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8dn-Nc-FeA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" id="cVd-10-gdu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cVd-10-gdu" id="qSC-WV-gbo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6rO-xy-YuP" id="yjO-Dx-LT0"/>
+                            <outlet property="delegate" destination="6rO-xy-YuP" id="2hi-ru-0Ev"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Shop Types Tables" id="tti-MX-oXq"/>
+                    <connections>
+                        <segue destination="v4j-tM-yTa" kind="show" id="j3n-ph-luf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RmK-v9-rYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663.20000000000005" y="-107.49625187406298"/>
+        </scene>
+        <!--Buttons View Controller-->
+        <scene sceneID="SKM-x5-oML">
+            <objects>
+                <viewController id="v4j-tM-yTa" customClass="ButtonsViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vZn-Wz-vig"/>
+                        <viewControllerLayoutGuide type="bottom" id="90j-9h-ena"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xoh-PE-yOD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l5Z-lu-ljq">
+                                <rect key="frame" x="37.5" y="283.5" width="300" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EHX-hR-W6h">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnm-TA-zx8">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                <state key="normal" title="Bakery"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrt-pR-piF">
+                                                <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                                                <state key="normal" title="Cafe"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVp-hz-abI">
+                                                <rect key="frame" x="200" y="0.0" width="100" height="50"/>
+                                                <state key="normal" title="Supermarket"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-QV-ZtE">
+                                        <rect key="frame" x="0.0" y="50" width="300" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7i-UY-4A9">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                <state key="normal" title="Restaurant"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-0K-rEm">
+                                                <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                                                <state key="normal" title="Bar"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwx-WJ-zjc">
+                                                <rect key="frame" x="200" y="0.0" width="100" height="50"/>
+                                                <state key="normal" title="Other"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Dlc-eC-0s7"/>
+                                    <constraint firstAttribute="width" constant="300" id="MjA-ke-RWj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l5Z-lu-ljq" firstAttribute="centerX" secondItem="xoh-PE-yOD" secondAttribute="centerX" id="Bnp-fX-CcA"/>
+                            <constraint firstItem="l5Z-lu-ljq" firstAttribute="centerY" secondItem="xoh-PE-yOD" secondAttribute="centerY" id="n9k-sI-yYS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bakeryButton" destination="Gnm-TA-zx8" id="bNP-5l-bW2"/>
+                        <outlet property="barButton" destination="ymf-0K-rEm" id="5Cp-mh-Maz"/>
+                        <outlet property="cafeButton" destination="Yrt-pR-piF" id="aa5-vi-m67"/>
+                        <outlet property="otherButton" destination="Bwx-WJ-zjc" id="KG6-WY-QNk"/>
+                        <outlet property="restaurantButton" destination="n7i-UY-4A9" id="hae-ga-dPM"/>
+                        <outlet property="superMarket" destination="GVp-hz-abI" id="fqV-gf-N1J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6b-Cd-aHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="-107.49625187406298"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T9H-QW-mkh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gAs-qt-wJH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ybb-yF-99J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6rO-xy-YuP" kind="relationship" relationship="rootViewController" id="JNG-I3-k6Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrY-Fm-DHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>
